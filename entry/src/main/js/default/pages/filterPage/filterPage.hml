@@ -1,0 +1,82 @@
+<div class="container">
+
+    <div class="navbar">
+        <image src="../../../default/common/images/left-arrow.png" id="category-icon" class="view-icon icon" onclick="toHome"></image>
+        <text class="navbar-title title">Filter</text>
+        <image src="../../../default/common/images/dots.png"  id="profile-pic" class="view-icon icon"></image>
+    </div>
+
+    <div class="gender-container">
+        <text class="title">Gender</text>
+        <div class="genders">
+            <toggle value="Male" class="gender" checked="true"></toggle>
+            <toggle value="Female" class="gender"></toggle>
+            <toggle value="Both" class="gender"></toggle>
+        </div>
+    </div>
+
+    <div class="categories-container">
+        <text class="categories-title title">Categories</text>
+        <select @change="changeCategory" class="category-dropdown">
+            <option value="appleValue" selected="true">
+                Select Category
+            </option>
+            <option value="categoryValue1">
+                Category 1
+            </option>
+            <option value="categoryValue2">
+                Category 2
+            </option>
+            <option value="categoryValue3">
+                Category 3
+            </option>
+        </select>
+    </div>
+
+    <div class="brands-container">
+        <text class="categories-title title">Brands</text>
+        <select @change="changeCategory" class="brand-dropdown">
+            <option value="appleValue" selected="true">
+                Select Brand
+            </option>
+            <option value="categoryValue1">
+                Brand 1
+            </option>
+            <option value="categoryValue2">
+                Brand 2
+            </option>
+            <option value="categoryValue3">
+                Brand 3
+            </option>
+        </select>
+    </div>
+
+    <div class="price-container">
+        <text class="price-title title">Price</text>
+        <div class="dual-slider">
+            <div class="slider"></div>
+            <div class="slider2"></div>
+            <div class="point"></div>
+            <div class="point point2"></div>
+        </div>
+        <text class="min-price">₹ 1000</text>
+        <text class="max-price">₹ 10,000</text>
+
+    </div>
+
+    <div class="sizes-container">
+        <text class="title">Sizes</text>
+        <div class="sizes">
+            <toggle value="6 Inches" class="size"></toggle>
+            <toggle value="7 Inches" class="size"></toggle>
+            <toggle value="8 Inches" class="size"  checked="true"></toggle>
+            <toggle value="9 Inches" class="size"></toggle>
+        </div>
+    </div>
+
+    <div class="cta-container">
+        <text class="clear">Clear all</text>
+        <text class="add">Add</text>
+    </div>
+
+</div>

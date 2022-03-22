@@ -1,0 +1,241 @@
+.container {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.title-container {
+    flex-direction: column;
+    padding: 20px 0 5px 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+
+.navbar {
+    top: 10px;
+    height: 60px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon,
+.profile-pic{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.profile-pic {
+    border-radius: 100px;
+}
+
+.search-container {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    
+}
+
+.search-input {
+    border-radius: 5px;
+    width: 90%;
+}
+
+#sort-icon {
+    height: 45px;
+    width: 45px;
+    padding: 10px 10px;
+    background-color: #EAEDED ;
+    border-radius: 5px;
+}
+
+.soon-container {
+    width: 100%;
+    height: 100px;
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #EAEDED;
+    border-radius: 5px;
+}
+.soon-image {
+    width: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.soon-product{
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+.soon-product-title,
+.coming-soon {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+.coming-soon{
+    color: #0891b2;
+}
+
+
+.notify{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+}
+.toggle-icon {
+    width: 50px;
+    height: 50px;
+}
+.notify-text {
+    font-size: 16px;
+}
+
+.categories-container {
+    margin: 10px;
+    margin-top: 15px;
+    flex-direction: column;
+}
+.categories {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.category-item {
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.popular-container {
+    margin: 8px 10px;
+    flex-direction: column;
+}
+.popularTitle-container {
+    justify-content: space-between;
+}
+.view {
+    margin-left: 10px;
+}
+.viewAll {
+    font-size: 15px;
+}
+.view-icon {
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    background-color: #93c5fd;
+    border-radius: 3px;
+}
+
+.cards-container {
+    margin: 8px 10px;
+    justify-content: space-between;
+}
+
+.card{
+    position: relative;
+
+    height: 260px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #F2F3F4;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
+}
+.heart{
+    position: absolute;
+    z-index: 100;
+    justify-content: flex-end;
+    height: 50px;
+}
+.heart-icon{
+    padding: 0px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+}
+.card-img,
+.card-img2{
+    object-fit: contain;
+}
+.card-titles {
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    flex-direction: column;
+}
+.card-title{
+    font-size: 16px;
+    letter-spacing: 0;
+}
+.price{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    
+    height: 70px;
+    width: 100%;
+    padding-top: 6px;
+    justify-content: space-around;
+    box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.09);
+
+    z-index: 1000;
+}
+.bottom-nav-icon {
+    height: 35px;
+    width: 35px;
+}
+
+@media screen and (device-type: tablet) and (orientation: landscape) {
+    .title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (device-type: wearable) {
+    .title {
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: tv) {
+    .container {
+        background-image: url("/common/images/Wallpaper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .title {
+        font-size: 100px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: phone) and (orientation: landscape) {
+    .title {
+        font-size: 60px;
+    }
+}

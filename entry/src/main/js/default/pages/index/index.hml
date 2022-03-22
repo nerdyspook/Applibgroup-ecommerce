@@ -1,0 +1,80 @@
+<div class="container">
+    <div class="navbar">
+        <image src="../../../default/common/images/category.png" id="category-icon" class="icon"></image>
+        <image src="../../../default/common/images/profile.jpg" class="profile-pic" id="profile-pic"></image>
+    </div>
+
+    <div class="title-container">
+        <text class="title">Discover </text>
+        <text class="title">our new Items</text>
+    </div>
+    
+    <div class="search-container">
+        <search hint="Search"  @search="search" id="search-input" class="search-input"></search>
+        <image src="../../../default/common/images/sort.png" class="icon" id="sort-icon" onclick="toFilter"></image>
+    </div>
+
+    <div class="soon-container">
+        <image src="../../../default/common/images/shoe.webp" class="soon-image"></image>
+        <div class="soon-product">
+            <text class="soon-product-title">Running Unisex Shoes</text>
+            <text class="coming-soon">Coming Soon...</text>
+        </div>
+        <div class="notify">
+            <image src="../../../default/common/images/toggle.png" class="toggle-icon"></image>
+            <text class="notify-text">Notify Me</text>
+        </div>
+    </div>
+
+    <div class="categories-container">
+        <text class="title">Categories</text>
+        <div class="categories">
+            <toggle value="Shoes" class="category-item" checked="true"></toggle>
+            <toggle value="Table" class="category-item"></toggle>
+            <toggle value="Cupboard" class="category-item"></toggle>
+            <toggle value="Sofa" class="category-item"></toggle>
+        </div>
+    </div>
+
+    <div class="popular-container">
+        <div class="popularTitle-container">
+            <text class="title">Popular Shoes</text>
+            <div class="view">
+                <text class="viewAll">View All</text>
+                <image src="../../../default/common/images/right-arrow.png" class="view-icon icon"></image>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <div class="card" onclick="toDetail">
+            <div class="heart">
+                <image src="../../../default/common/images/heart.png" class="heart-icon"></image>
+            </div>
+            <image src="../../../default/common/images/card-img.webp" class="card-img"></image>
+            <div class="card-titles">
+                <text class="card-title title">Running unisex Shoes Edition 1</text>
+                <text class="price"> ₹ 11,495</text>
+            </div>
+
+        </div>
+        <div class="card" onclick="toDetail">
+            <div class="heart">
+                <image src="../../../default/common/images/heart.png" class="heart-icon"></image>
+            </div>
+            <image src="../../../default/common/images/card-img2.webp" class="card-img2"></image>
+            <div class="card-titles">
+                <text class="card-title title">Running unisex Shoes Edition 1</text>
+                <text class="price"> ₹ 11,495</text>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <image src="../../../default/common/images/home.png" class="bottom-nav-icon icon" id="home-icon"></image>
+        <image src="../../../default/common/images/category.png" class="bottom-nav-icon icon" id="category-icon"></image>
+        <image src="../../../default/common/images/bell.png" class="bottom-nav-icon icon" id="bell-icon"></image>
+        <image src="../../../default/common/images/cart.png" class="bottom-nav-icon icon" id="cart-icon"></image>
+    </div>
+
+</div>

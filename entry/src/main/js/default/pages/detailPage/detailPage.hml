@@ -1,0 +1,65 @@
+<div class="container">
+
+    <div class="navbar">
+        <image src="../../../default/common/images/left-arrow.png" id="category-icon" class="view-icon icon" onclick="toHome"></image>
+        <text class="navbar-title title">Detail</text>
+        <image src="../../../default/common/images/dots.png"  id="profile-pic" class="view-icon icon"></image>
+    </div>
+
+    <div class="product">
+        <image src="../../../default/common/images/shoe.webp" class="product-image"></image>
+        <div class="rating">
+            <div class="star-rating">
+                <image src="../../../default/common/images/star.png" class="star-icon icon"></image>
+                <text class="rating-text">4.6</text>
+            </div>
+
+            <text class="reviews">200 reviews</text>
+        </div>
+    </div>
+
+    <div class="product-details">
+        <text class="product-title title">Running Unisex Shoes</text>
+        <text class="product-price">₹ 11,495</text>
+        <text class="product-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti natus sint ratione quibusdam aut esse maiores tenetur dolorum! Numquam laboriosam eius laudantium id perferendis accusantium quos iusto rem eveniet!</text>
+
+    </div>
+
+    <div class="color-quantity-container">
+        <div class="color-container">
+            <text class="color-title title">Color</text>
+            <div class="color-box blue-box"></div>
+            <div class="color-box yellow-box"></div>
+            <div class="color-box red-box"></div>
+        </div>
+
+        <div class="quantity-container">
+            <image src="../../../default/common/images/plus.png" class="increment icon view-icon"></image>
+            <text class="quantity">1</text>
+            <image src="../../../default/common/images/minus.png" class="decrement icon view-icon"></image>
+        </div>
+    </div>
+
+    <div class="sizes-container">
+        <text class="title">Available Sizes</text>
+        <div class="sizes">
+            <toggle value="6 Inches" class="size" checked="true"></toggle>
+            <toggle value="7 Inches" class="size"></toggle>
+            <toggle value="8 Inches" class="size"></toggle>
+            <toggle value="9 Inches" class="size"></toggle>
+        </div>
+    </div>
+
+    <div class="cart-wishlist-container">
+        <div class="heart">
+            <image src="../../../default/common/images/heart.png" class="heart-icon"></image>
+        </div>
+        <div class="addToCart">
+            <text class="cart-title title">ADD TO CART</text>
+            <div class="cart">
+                <image src="../../../default/common/images/cart.png" class="cart-icon icon" id="cart-icon"></image>
+            </div>
+        </div>
+    </div>
+
+</div>
